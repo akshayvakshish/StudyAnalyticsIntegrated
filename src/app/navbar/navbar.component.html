@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <div class="row nav-custom">
+    <div class="container">
+      <div class="col-xs-4 col-sm-5 col-md-7">
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 col-md-4 logo-text"><strong routerLink="/">LOGO</strong></div>
+          <!-- <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">    <span class="navbar-toggler-icon"></span>
+  </button></button> -->
+          <div class="col-xs-6 col-sm-6 col-md-8 nav-left-links list">
+            <div *ngFor='let link of navLinks' class="list-link"><a class="test">{{link.link}}<i *ngIf="link.link.toLowerCase() == 'courses' || link.link.toLowerCase() == 'companies'" class="caret-down">*</i></a>
+              <div class="drop-menu"><app-nav-dropdown class="drop-item" [dropDownMenu]="link.menu" menuHeader="{{link.link}}"></app-nav-dropdown></div>
+                <!-- <a *ngFor="let item of link.menu">{{item}}</a></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-5">
+    </div>
+  </div>
+</div>

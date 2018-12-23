@@ -1,0 +1,80 @@
+.nav-custom{
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.33);
+  height: 50px;
+  border : groove;
+  border-color: rgba(221, 227, 225, 0.33);
+  border-radius: 5px;
+  /* overflow: hidden; */
+}
+.nav-left-links{
+  margin: auto;
+}
+.test{
+ font-weight: 600;
+}
+
+.list{
+  padding-top: 0px;
+  padding-bottom: 5px;
+  color: rgb(30,144,255);
+  margin: auto auto auto auto;
+}
+.list-link{
+    float: left;
+    overflow: hidden;
+    padding : 10px 7px 10px 7px;
+}
+.list-link:hover > a {
+    color: rgb(255, 255, 255);
+}
+.list-link:hover{
+    background-color: rgb(40, 105, 255,0.7);
+}
+.drop-menu {
+  margin: 12px auto auto -7px;
+  display: none;
+  position: absolute;
+  padding : 10px;
+  background-color:  rgba(255, 255, 255, 0.33);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  max-height: 200px;
+  min-width: 450px;
+}
+.drop-menu .drop-item {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  z-index: 1;
+}
+/* .drop-menu .drop-item:hover {
+  background-color: #ddd;
+  text-decoration: underline;
+  color:  rgb(30,144,255);
+  cursor: pointer;
+} */
+.list-link:hover .test + .drop-menu {
+  display: block;
+}
+.nav-image{
+  border-radius : 50%;
+  width : 45px;
+  height : 45px;
+  margin-right: auto 10px auto auto;
+}
+.nav-image:hover{
+  -webkit-filter: contrast(180%);filter: contrast(180%);
+}
+.logo-text{
+  margin: auto auto auto auto;
+  color: rgb(30,144,255);
+  font-size: 20px;
+}
+.logo-text:hover{
+  font-size: 30px;
+  color: black;
+}

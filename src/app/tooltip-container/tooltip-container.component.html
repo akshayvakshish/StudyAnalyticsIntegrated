@@ -1,0 +1,12 @@
+<ng-template #showVid>
+  <div>
+    <iframe width="auto" height="auto" src="https://www.youtube-nocookie.com/embed/yyRnlZVTyME?controls=0;&autoplay=1" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    <!-- <video controls class="video-view" #videoPlayer>
+        <source src="https://www.youtube.com/watch?v=bbBY1IsnRls" type="video/mp4" />
+        Browser not supported
+    </video> -->
+  </div>
+</ng-template>
+<button type="button" class="btn btn-outline-secondary" tooltipClass="videoTooltip" [autoClose]="false" [ngbTooltip]="showVid">
+  Loads a video on hover</button>

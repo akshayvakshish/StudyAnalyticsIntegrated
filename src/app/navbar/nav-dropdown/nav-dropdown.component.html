@@ -1,0 +1,9 @@
+<div class="dropdown-card">
+  <a *ngIf="menuHeader =='Courses'" routerLink="courselist" class="title">Courses By Subject</a>
+  <a *ngIf="menuHeader =='Companies'" class="title">Companies That Trurst Us</a>
+  <button *ngIf="menuHeader =='Courses'" class="btn btn-primary btn-dropdown">View All Courses</button>
+  <hr *ngIf="menuHeader =='Companies' || menuHeader =='Courses'" class="break-class">
+  <div *ngFor="let item of dropDownMenu" class="menu-list">
+    <a [routerLink]="['/'+menuHeader.toLowerCase(), item.id]" class="menu-link">{{item.name}}</a>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+.break-class{
+    height: 2px;
+    border-color: black;
+}
+.dropdown-card{
+}
+.title{
+    font-size: 20px;
+    color:  rgb(30,144,255) !important;
+
+}
+.title:hover{
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+.menu-list{
+
+}
+.btn-dropdown{
+    float : right;
+    margin-top: -5px;
+    font-size: 15px; 
+}
+.menu-link{
+    font-size: 14px;
+    padding : 2px 12px 5px 5px;
+    float: left;
+}
+.menu-link:hover{
+    cursor: pointer;
+    text-decoration: underline !important;
+    color:  rgb(30,144,255) !important ;
+}
