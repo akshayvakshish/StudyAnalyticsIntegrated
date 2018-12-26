@@ -38,6 +38,8 @@ import { CourseCardComponent } from './body/course/list-of-courses/course-card/c
 import { RegistrationComponent } from './registration/registration.component';
 import { RegistrationFooterComponent } from './registration-footer/registration-footer.component';
 import { ServiceInterceptor } from './interceptors/service-interceptor';
+import { TestimonialComponent } from './testimonial/testimonial.component';
+import { TestimonyComponent } from './Testimonial/testimony/testimony.component';
 //import { SideNavComponent } from './side-nav/side-nav.component';
 //import { ViewCourseComponent } from './view-course/view-course.component';
 const appRoutes: Routes = [
@@ -66,7 +68,7 @@ const appRoutes: Routes = [
     NavDropdownComponent,
     CourseComponent,
     CourseListComponent,
-    AppComponent,  IntroductionComponent, BarGraphsComponent, PieChartsComponent, GraphsComponent,CoursesComponent,CourseCardComponent, RegistrationComponent, RegistrationFooterComponent
+    AppComponent,  IntroductionComponent, BarGraphsComponent, PieChartsComponent, GraphsComponent,CoursesComponent,CourseCardComponent, RegistrationComponent, RegistrationFooterComponent, TestimonialComponent, TestimonyComponent
   ],
   imports: [
     BrowserModule, NgbModule, FormsModule, ReactiveFormsModule, RouterModule.forRoot(appRoutes),BrowserModule,
